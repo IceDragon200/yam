@@ -27,6 +27,10 @@ defmodule Yam.Encode do
     map(item, options)
   end
 
+  def atom(nil, _options) do
+    "null"
+  end
+
   def atom(item, _options) do
     Atom.to_string(item)
   end
