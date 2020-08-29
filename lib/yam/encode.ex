@@ -43,7 +43,7 @@ defmodule Yam.Encode do
     Float.to_string(item)
   end
 
-  def string(item, options) do
+  def string(item, _options) do
     if String.contains?(item, "\n") do
       # multiline
       [
@@ -108,7 +108,7 @@ defmodule Yam.Encode do
     end
   end
 
-  def list([], options) do
+  def list([], _options) do
     "[]"
   end
 

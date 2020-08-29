@@ -3,7 +3,7 @@ defmodule YamTest do
 
   describe "encode/1" do
     test "can encode an atom" do
-      assert {:ok, "nil"} == Yam.encode(nil)
+      assert {:ok, "null"} == Yam.encode(nil)
       assert {:ok, "true"} == Yam.encode(true)
       assert {:ok, "false"} == Yam.encode(false)
       assert {:ok, "hello"} == Yam.encode(:hello)
